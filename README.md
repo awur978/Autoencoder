@@ -2,6 +2,7 @@
 This repo contains the Keras code for fully connected autoencoder found in several articles.
 
 This is a 8 hidden layer autoencoder, 4 hidden encoder layers and 4 hidden decoder layers.
+Dataset: Mnist
 Layer1 1000
 Layer2 500
 Layer3 250
