@@ -17,7 +17,6 @@ print('Test samples: {}'.format(x_test.shape[0]))
 #Training Parameters
 
 input_dim = x_train.shape[1]
-encoding_dim = 32
 num_epochs = 50
 h1 = 1000
 h2 = 500
