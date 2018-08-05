@@ -3,10 +3,10 @@ This repo contains the Keras code for fully connected autoencoder found in sever
 
 This is a 8 hidden layer autoencoder, 4 hidden encoder layers and 4 hidden decoder layers.
 Dataset: Mnist
-Layer1 1000
-Layer2 500
-Layer3 250
-Layer4 30
+1. Layer1 1000
+2. Layer2 500
+3. Layer3 250
+4. Layer4 30
 
 Articles
 1. Training Neural Networks by Using Power Linear Units (PoLUs) link: https://arxiv.org/abs/1802.00212
