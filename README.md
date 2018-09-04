@@ -12,3 +12,7 @@ Articles
 1. Training Neural Networks by Using Power Linear Units (PoLUs) link: https://arxiv.org/abs/1802.00212
 2. Fast and accurate deep network learning by exponential linear units (elu) link: https://arxiv.org/abs/1511.07289
 3. Natural Neural Networks (This is the original source) link: https://arxiv.org/abs/1507.00210
+
+# Prerequisites
+-Python, NumPy, SciPy, Matplotlib
+-TensorFlow, Keras
