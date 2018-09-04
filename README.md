@@ -15,4 +15,5 @@ Articles
 
 # Prerequisites
 -Python, NumPy, SciPy, Matplotlib
+
 -TensorFlow, Keras
