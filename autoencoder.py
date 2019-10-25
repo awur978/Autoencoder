@@ -53,6 +53,22 @@ autoencoder.add(Dense(h2, activation='elu'))
 autoencoder.add(Dense(h1, activation='elu'))
 '''
 
+'''
+#SQLU Activation Function
+#Encoder 4 hidden layers
+autoencoder.add(Dense(h1, input_shape=(input_dim,),activation='sqlu'))
+#autoencoder.add(Dropout(0.25))
+autoencoder.add(Dense(h2, activation='sqlu'))
+autoencoder.add(Dense(h3, activation='sqlu'))
+autoencoder.add(Dense(h4, activation='sqlu'))
+#Decoder 4 hidden layers
+autoencoder.add(Dense(h4, input_shape=(input_dim,),activation='sqlu'))
+autoencoder.add(Dense(h3, activation='sqlu'))
+autoencoder.add(Dense(h2, activation='sqlu'))
+autoencoder.add(Dense(h1, activation='sqlu'))
+'''
+
+
 #Output layer
 autoencoder.add(Dense(input_dim, activation='sigmoid'))
 autoencoder.summary()
