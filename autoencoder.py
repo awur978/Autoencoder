@@ -26,6 +26,7 @@ h4 = 30
 
 
 autoencoder = Sequential()
+#RELU Activation function
 #Encoder 4 hidden layers
 autoencoder.add(Dense(h1, input_shape=(input_dim,),activation='relu'))
 #autoencoder.add(Dropout(0.25))
@@ -37,6 +38,21 @@ autoencoder.add(Dense(h4, input_shape=(input_dim,),activation='relu'))
 autoencoder.add(Dense(h3, activation='relu'))
 autoencoder.add(Dense(h2, activation='relu'))
 autoencoder.add(Dense(h1, activation='relu'))
+'''
+#ELU Activation Function
+#Encoder 4 hidden layers
+autoencoder.add(Dense(h1, input_shape=(input_dim,),activation='elu'))
+#autoencoder.add(Dropout(0.25))
+autoencoder.add(Dense(h2, activation='elu'))
+autoencoder.add(Dense(h3, activation='elu'))
+autoencoder.add(Dense(h4, activation='elu'))
+#Decoder 4 hidden layers
+autoencoder.add(Dense(h4, input_shape=(input_dim,),activation='elu'))
+autoencoder.add(Dense(h3, activation='elu'))
+autoencoder.add(Dense(h2, activation='elu'))
+autoencoder.add(Dense(h1, activation='elu'))
+'''
+
 #Output layer
 autoencoder.add(Dense(input_dim, activation='sigmoid'))
 autoencoder.summary()
