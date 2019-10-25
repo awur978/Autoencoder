@@ -14,6 +14,7 @@ print('Train samples: {}'.format(x_train.shape[0]))
 print('Test samples: {}'.format(x_test.shape[0]))
 (x_train.shape, x_test.shape)
 
+
 #Training Parameters
 
 input_dim = x_train.shape[1]
