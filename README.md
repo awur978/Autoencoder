@@ -14,5 +14,9 @@ Dataset: Mnist
 3. Natural Neural Networks (This is the original source) link: https://arxiv.org/abs/1507.00210
 
 # Prerequisites
--Python, NumPy, SciPy, Matplotlib
--TensorFlow, Keras
+- Python,
+- NumPy, 
+- SciPy, 
+- Matplotlib
+- TensorFlow, 
+- Keras
