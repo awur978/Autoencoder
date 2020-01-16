@@ -31,6 +31,7 @@ training_dataset = training_dataset.shuffle(training_features.shape[0])
 training_dataset = training_dataset.prefetch(batch_size * 4)
 
 
+
 class Encoder(tf.keras.layers.Layer):
   def __init__(self, intermediate_dim):
     super(Encoder, self).__init__()
